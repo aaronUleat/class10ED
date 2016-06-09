@@ -1,0 +1,55 @@
+/*Todas las variables inician con un signo de dolar*/
+body {
+  font-size: 10px; }
+
+h1, h2, h3, h4, h5 {
+  color: dodgerblue; }
+
+p {
+  font-size: 1.8em;
+  color: #767676; }
+
+/*Anidacion de selectors*/
+.padre {
+  font-size: 2em; }
+  .padre .hijo {
+    font-size: .8em;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-style: italic; }
+
+/*El simbolo de & Permite que nos referenciemos al padre*/
+a {
+  color: red; }
+  a:hover {
+    color: grey; }
+
+.menu {
+  list-style: none;
+  /*Para refenciar primero al padre*/ }
+  .menu__item {
+    display: inline-block; }
+  .menu__link {
+    display: block; }
+  footer .menu {
+    background: #000; }
+
+.menu {
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sociales, .sociales--footer {
+  display: inline-block;
+  line-height: 3rem;
+  padding: 0 2em; }
+
+.sociales--footer {
+  margin-top: 20px;
+  font-family: Georgia; }
+
+pre {
+  background: dodgerblue;
+  color: white; }
